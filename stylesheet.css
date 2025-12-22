@@ -112,6 +112,10 @@ h2 { font-size: clamp(1.25rem, 2.2vw, 1.8rem); margin: 16px 0 10px 0; }
   /* red divider line */
   border-bottom: 3px solid rgba(180, 58, 47, 0.60);
 }
+body.home-page #main-nav {
+  background-color: transparent;
+  border-bottom: none;
+}
 
 #main-nav > ul {
   list-style: none;
@@ -668,5 +672,6 @@ body.fixed-footer {
     padding: 8px 14px;
   }
 }
+
 
 
