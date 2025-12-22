@@ -106,7 +106,8 @@ h2 { font-size: clamp(1.25rem, 2.2vw, 1.8rem); margin: 16px 0 10px 0; }
    ================================================ */
 
 #main-nav {
-  background-color: transparent;   /* removes black bar */
+  background-color: black;/* removes black bar */
+  border-color: rgba(180,58,47,0.60);
   padding: 2px 0;
   z-index: 1000;
 }
@@ -666,3 +667,4 @@ body.fixed-footer {
     padding: 8px 14px;
   }
 }
+
