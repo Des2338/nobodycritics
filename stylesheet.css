@@ -673,5 +673,61 @@ body.fixed-footer {
   }
 }
 
+/* =========================
+   CONTACT PAGE STYLES
+   ========================= */
+
+.contact-section {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+}
+
+.contact-intro {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 18px;
+    color: #e0e0e0;
+}
+
+.contact-block {
+    margin-top: 40px;
+    padding: 24px 28px;
+    border-left: 4px solid rgba(180, 58, 47, 0.8);
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.contact-block h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+}
+
+.contact-block p {
+    margin: 6px 0;
+    line-height: 1.5;
+}
+
+.contact-block a {
+    color: rgba(220, 85, 70, 0.95);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-block a:hover {
+    text-decoration: underline;
+}
+
+.contact-note {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    font-style: italic;
+    color: #cfcfcf;
+}
+
+
+
 
 
