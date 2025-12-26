@@ -730,74 +730,83 @@ body.fixed-footer {
 }
 
 /* ============================================================
-   MOBILE FRIENDLY SITE-WIDE (EXCEPT HOME/INDEX)
-   - Bigger readable text
-   - Better line-height
-   - Comfortable side padding
-   - Left-aligned reading (mobile)
-   - Fixes review poster stretching + stacks nicely
+   MOBILE READABILITY (SITE-WIDE EXCEPT HOME/INDEX)
+   Stronger overrides so it actually takes effect.
    ============================================================ */
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 
-  /* 1) Reading mode for all pages EXCEPT the home page */
+  /* Reading mode for all pages except home */
   body:not(.home-page) {
     text-align: left;
   }
 
+  /* Typography: make it clearly readable on phones */
   body:not(.home-page) p,
-  body:not(.home-page) li {
-    font-size: 1.15rem;     /* ~18–19px */
-    line-height: 1.75;
-    width: auto;
-    margin: 12px 0;
-    text-align: left;
+  body:not(.home-page) li,
+  body:not(.home-page) .reviews-page p,
+  body:not(.home-page) .reviews-page li,
+  body:not(.home-page) .review-page p,
+  body:not(.home-page) .review-page li,
+  body:not(.home-page) .blog-layout .blog-post__body p,
+  body:not(.home-page) .blog-layout .blog-post__body li {
+    font-size: 1.25rem !important;  /* ~20px */
+    line-height: 1.85 !important;
+    width: auto !important;
+    margin: 12px 0 !important;
+    text-align: left !important;
   }
 
+  /* Headings scale */
   body:not(.home-page) h1 {
-    font-size: 1.9rem;
+    font-size: 2rem !important;
     line-height: 1.2;
-    margin: 18px 0 10px 0;
     text-align: left;
   }
 
   body:not(.home-page) h2 {
-    font-size: 1.35rem;
+    font-size: 1.45rem !important;
     line-height: 1.25;
-    margin: 16px 0 10px 0;
     text-align: left;
   }
 
-  /* 2) Comfortable padding for main content areas */
+  /* Give content breathing room */
   body:not(.home-page) main,
   body:not(.home-page) .blog-main,
   body:not(.home-page) .reviews-page,
   body:not(.home-page) .review-page,
   body:not(.home-page) .contact-section {
-    padding-left: 18px !important;
-    padding-right: 18px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
   }
 
-  /* 3) Images behave on mobile */
-  body:not(.home-page) img,
-  body:not(.home-page) video {
-    max-width: 100%;
-    height: auto;
+  /* Optional: comfortable “reading column” */
+  body:not(.home-page) .reviews-page,
+  body:not(.home-page) .review-page,
+  body:not(.home-page) .contact-section,
+  body:not(.home-page) .blog-main {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  /* 4) Reviews list cards stack cleanly */
+  /* Reviews list cards stack + keep pop */
   .reviews-grid .review-card {
     flex-direction: column;
+    padding: 18px;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(180, 58, 47, 0.60);
+    border-radius: var(--radius);
   }
 
   .review-image-link img {
     width: 100%;
-    height: auto;
+    height: auto !important;
     max-width: 420px;
     margin: 0 auto;
   }
 
-  /* 5) Single review page: poster on top, NOT stretched */
+  /* Single review poster: on top, not stretched */
   .review-header {
     flex-direction: column;
     gap: 14px;
@@ -805,7 +814,7 @@ body.fixed-footer {
 
   .review-poster {
     width: 100%;
-    height: auto;           /* KEY: stops the tall stretched poster */
+    height: auto !important;
     max-width: 420px;
     margin: 0 auto 10px;
   }
