@@ -720,3 +720,30 @@ body.home-page {
 @media (max-width: 900px) {
   body.home-page { padding-bottom: 60px; }
 }
+
+/* =========================================================
+   BLOG ONLY — FIX DESKTOP IMAGE CROPPING (LEAST INVASIVE)
+   Best spot: right AFTER the existing blog image rule so it
+   clearly overrides it without affecting other pages.
+   ========================================================= */
+
+/* Desktop blog images: show full image, no crop */
+@media (min-width: 901px) {
+  .blog-post__media img,
+  .blog-post img {
+    width: 100%;
+    height: auto;
+    max-height: none;       /* remove the 380px crop */
+    object-fit: contain;    /* show full image */
+    background-color: #000; /* letterbox looks intentional */
+    border-radius: 8px;
+  }
+}
+
+/* Optional: stop images from becoming absurdly tall on huge screens */
+@media (min-width: 1200px) {
+  .blog-post__media img,
+  .blog-post img {
+    max-height: 560px;
+  }
+}
