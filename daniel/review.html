@@ -84,24 +84,45 @@
         </article>
 
 
-                <!-- Paste into: /daniel/review.html inside <section class="reviews-grid"> -->
-        <article class="review-card">
-            <a href="reviews/superman(2025).html" class="review-image-link">
-                <img class="review-poster" src="../images/daniel/Superman(2025).jpg" alt="Superman (2025) poster">
+        <!-- Review Card: Superman (2025) -->
+        <article class="review-card"
+                 data-reviewer="daniel"
+                 data-year="2025"
+                 data-rating="7.5"
+                 data-primary-genre="superhero"
+                 data-genres="action,epic,scifi,superhero">
+        
+            <a href="/daniel/reviews/superman(2025).html">
+                <img class="review-card-poster"
+                     src="/images/daniel/Superman(2025).jpg"
+                     alt="Superman (2025) poster">
             </a>
         
-            <div class="review-content">
-                <h2 class="review-title">
-                    <a href="reviews/superman(2025).html">Superman (2025)</a>
-                </h2>
+            <div class="review-card-content">
+                <h3 class="review-card-title">Superman (2025)</h3>
         
-                <p class="review-meta">By Daniel • December 2025</p>
-        
-                <p class="review-excerpt">
-                    James Gunn skips the origin and drops us into an already-established Superman. The visuals pop, the source material influence is strong, and Lex is a real villain — even if the comedy sometimes undercuts the emotional weight.
+                <p class="review-card-meta">
+                    <span class="review-card-rating">⭐ 7.5 / 10</span>
+                    <span class="review-card-runtime">2h 9m</span>
                 </p>
         
-                <a href="reviews/superman(2025).html" class="read-more">Read full review →</a>
+                <!-- ===== GENRE TAGS ===== -->
+                <div class="genre-tags">
+                    <span class="genre-tag">Action</span>
+                    <span class="genre-tag">Epic</span>
+                    <span class="genre-tag">Sci-Fi</span>
+                    <span class="genre-tag">Superhero</span>
+                </div>
+        
+                <p class="review-card-excerpt">
+                    A grounded, visually strong take on Superman that skips the origin
+                    and focuses on moral balance, leadership, and consequence.
+                </p>
+        
+                <a class="review-card-link"
+                   href="/daniel/reviews/superman(2025).html">
+                    Read Full Review →
+                </a>
             </div>
         </article>
 
@@ -190,6 +211,7 @@
 
 </body>
 </html>
+
 
 
 
