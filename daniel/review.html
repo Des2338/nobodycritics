@@ -1,44 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daniel's Reviews | Nobody Critics</title>
-    <link rel="stylesheet" href="../stylesheet.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniel's Reviews | Nobody Critics</title>
+  <link rel="stylesheet" href="../stylesheet.css">
 </head>
+
 <body class="fixed-nav fixed-footer">
 
-    <!-- ===== SITE NAVIGATION (COPY YOUR EXISTING NAV HERE) ===== -->
-    <nav id="main-nav">
-        <ul>
-            <li>
-                <a>Daniel</a>
-                <ul class="secondary-nav">
-                    <li><a href="blog.html">Blog</a></li>
-                </ul>
-            </li>
-
-            <li>
-                <a>Ross</a>
-                <ul class="secondary-nav">
-                    <li><a href="../ross/review.html">Reviews</a></li>
-                    <li><a href="../ross/blog.html">Blog</a></li>
-                </ul>
-            </li>
-
-            <li><a href="../podcast.html">Podcast</a></li>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../shop.html">Shop</a></li>
-            <li><a href="../about.html">About</a></li>
+  <!-- ===== SITE NAVIGATION (COPY YOUR EXISTING NAV HERE) ===== -->
+  <nav id="main-nav">
+    <ul>
+      <li>
+        <a>Daniel</a>
+        <ul class="secondary-nav">
+          <li><a href="../books.html">Book Reviews</a></li>
+          <li><a href="blog.html">Blog</a></li>
         </ul>
-    </nav>
+      </li>
 
-    <main class="reviews-page">
-        <h1>Daniel's Reviews</h1>
-        <div class="redBr"></div>
+      <li>
+        <a>Ross</a>
+        <ul class="secondary-nav">
+          <li><a href="../ross/review.html">Reviews</a></li>
+          <li><a href="../ross/blog.html">Blog</a></li>
+        </ul>
+      </li>
 
-        <section class="reviews-grid">
-                <!-- ===== REVIEW CARD: Good Luck, Have Fun, Don’t Die (2026) ===== -->
+      <li><a href="../podcast.html">Podcast</a></li>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../shop.html">Shop</a></li>
+      <li><a href="../about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <main class="reviews-page">
+    <h1>Daniel's Reviews</h1>
+    <div class="redBr"></div>
+
+    <section class="reviews-grid">
+    <!-- ===== REVIEW CARD: Project Hail Mary (2026) ===== -->
+<article class="review-card"
+         data-reviewer="daniel"
+         data-title="project hail mary"
+         data-year="2026"
+         data-director="Phil Lord, Christopher Miller"
+         data-runtime="156"
+         data-rating="8"
+         data-genres="sci-fi,drama,dark-comedy,epic">
+
+  <a href="reviews/project-hail-mary(2026).html" class="review-image-link">
+    <img class="review-poster"
+         src="../images/daniel/project-hail-mary(2026).jpg"
+         alt="Project Hail Mary (2026) poster">
+  </a>
+
+  <div class="review-content">
+    <h2 class="review-title">
+      <a href="reviews/project-hail-mary(2026).html">Project Hail Mary (2026)</a>
+    </h2>
+
+    <p class="review-meta">By Daniel</p>
+
+    <div class="genre-tags"
+         data-primary-genre="sci-fi"
+         data-genres="sci-fi,drama,dark-comedy,epic">
+      <span class="genre-chip" data-genre="sci-fi">Sci-Fi</span>
+      <span class="genre-chip" data-genre="drama">Drama</span>
+      <span class="genre-chip" data-genre="dark-comedy">Dark Comedy</span>
+      <span class="genre-chip" data-genre="epic">Epic</span>
+    </div>
+
+    <p class="review-excerpt">
+      A strong adaptation that captures the heart of the story, balancing science, emotion, and one of the best on-screen partnerships in recent sci-fi.
+    </p>
+
+    <a href="reviews/project-hail-mary(2026).html" class="read-more">Read full review →</a>
+  </div>
+</article>
+
+      <!-- ===== REVIEW CARD: Good Luck, Have Fun, Don’t Die (2026) ===== -->
 <article class="review-card"
          data-reviewer="daniel"
          data-title="good luck, have fun, don’t die"
@@ -77,7 +119,7 @@
     <a href="reviews/good-luck-have-fun-dont-die(2026).html" class="read-more">Read full review →</a>
   </div>
 </article>
-            <!-- ===== REVIEW CARD: GOAT (2026) ===== -->
+      <!-- ===== REVIEW CARD: GOAT (2026) ===== -->
 <article class="review-card"
          data-reviewer="daniel"
          data-title="goat"
@@ -119,7 +161,7 @@
     <a href="reviews/goat(2026).html" class="read-more">Read full review →</a>
   </div>
 </article>
-              <!-- ===== REVIEW CARD: Send Help (2026) ===== -->
+      <!-- ===== REVIEW CARD: Send Help (2026) ===== -->
 <article class="review-card"
          data-reviewer="daniel"
          data-title="send help"
@@ -158,7 +200,7 @@
     <a href="reviews/send-help(2026).html" class="read-more">Read full review →</a>
   </div>
 </article>
-                    <!-- ===== REVIEW CARD: Heretic (2024) ===== -->
+        <!-- ===== REVIEW CARD: Heretic (2024) ===== -->
 <article class="review-card"
          data-reviewer="daniel"
          data-title="heretic"
@@ -197,7 +239,8 @@
   </div>
 </article>
 
-             <!-- ===== REVIEW CARD: Godzilla (1954) ===== -->
+ 
+    <!-- ===== REVIEW CARD: Godzilla (1954) ===== -->
     <article class="review-card"
             data-reviewer="daniel"
             data-title="godzilla"
@@ -219,7 +262,7 @@
         </h2>
 
         <p class="review-meta">
-          By Daniel • February 2026
+          By Daniel • January 2026
         </p>
 
         <div class="genre-tags"
@@ -243,7 +286,8 @@
         </a>
       </div>
     </article>
-                  <!-- ===== REVIEW CARD: Wicked: For Good (2025) ===== -->
+
+      <!-- ===== REVIEW CARD: Wicked: For Good (2025) ===== -->
 <article class="review-card"
          data-reviewer="daniel"
          data-title="wicked: for good"
@@ -267,7 +311,7 @@
     </h2>
 
     <p class="review-meta">
-      By Daniel • February 2026
+      By Daniel • Feubruary 2026
     </p>
 
     <div class="genre-tags"
@@ -290,7 +334,8 @@
     </a>
   </div>
 </article>
-        <!-- ===== REVIEW CARD: 28 Years Later: Bone Temple (2026) ===== -->
+
+<!-- ===== REVIEW CARD: 28 Years Later: Bone Temple (2026) ===== -->
 <article class="review-card"
          data-reviewer="daniel"
          data-title="28 years later: bone temple"
@@ -340,25 +385,27 @@
     </a>
   </div>
 </article>
-            <!-- ===== REVIEW CARD: Primate (2026) ===== -->
-<article class="review-card"
-        data-reviewer="daniel"
-        data-title="primate"
-        data-year="2026"
-        data-director="tbd"
-        data-runtime="tbd"
-        data-rating="8"
-        data-genres="horror,thriller,slasher">
 
-  <a href="reviews/primate(2026).html" class="review-image-link">
+
+      <!-- ===== REVIEW CARD: Primate (2025) ===== -->
+<article class="review-card"
+         data-reviewer="daniel"
+         data-title="primate"
+         data-year="2025"
+         data-director="Johannes Roberts"
+         data-runtime="89"
+         data-rating="8"
+         data-genres="horror,thriller,suspense,animal">
+
+  <a href="reviews/primate(2025).html" class="review-image-link">
     <img class="review-poster"
-         src="../images/daniel/primate(2026).jpg"
-         alt="Primate (2026) poster">
+         src="../images/daniel/Primate(2025).jpg"
+         alt="Primate (2025) poster">
   </a>
 
   <div class="review-content">
     <h2 class="review-title">
-      <a href="reviews/primate(2026).html">Primate (2026)</a>
+      <a href="reviews/primate(2025).html">Primate (2025)</a>
     </h2>
 
     <p class="review-meta">
@@ -367,199 +414,249 @@
 
     <div class="genre-tags"
          data-primary-genre="horror"
-         data-genres="horror,thriller,slasher">
+         data-genres="horror,thriller,suspense,animal">
       <span class="genre-tag" data-genre="horror">Horror</span>
       <span class="genre-tag" data-genre="thriller">Thriller</span>
-      <span class="genre-tag" data-genre="slasher">Slasher</span>
+      <span class="genre-tag" data-genre="suspense">Suspense</span>
+      <span class="genre-tag" data-genre="animal">Animal</span>
     </div>
 
     <p class="review-excerpt">
-      A relentless, tension-driven horror film that pulls inspiration from classic slashers and
-      grounds its fear in something far more disturbing — a real-world threat. No monsters.
-      No supernatural escape. Just people trapped in a house with a rabid chimpanzee.
+      Primate wastes no time pulling you in, building grounded fear around a real-world threat that feels
+      disturbingly believable. Practical effects, restrained escalation, and intense tension make it one
+      of the most effective horror films of the year.
     </p>
 
-    <a href="reviews/primate(2026).html" class="read-more">
+    <a href="reviews/primate(2025).html" class="read-more">
       Read full review →
     </a>
   </div>
 </article>
-
-            <!-- ===== REVIEW CARD: Good Fortune (2025) ===== -->
-            <article class="review-card">
-              <a href="reviews/goodfortune(2025).html" class="review-image-link">
-                <img class="review-poster" src="../images/daniel/goodfortune(2025).jpg" alt="Good Fortune (2025) poster">
-              </a>
-            
-              <div class="review-content">
-                <h2 class="review-title">
-                  <a href="reviews/goodfortune(2025).html">Good Fortune (2025)</a>
-                </h2>
-            
-                <p class="review-meta">By Daniel • January 2026</p>
-            
-                <p class="review-excerpt">
-                  Marketed as a comedy, but it plays more like a modern drama about stress, money, and feeling unseen.
-                  The jokes didn’t land for me, but the message did — especially through Keanu Reeves’ Gabriel.
-                </p>
-            
-                <a href="reviews/goodfortune(2025).html" class="read-more">Read full review →</a>
-              </div>
-            </article>
-
-            <!-- ===== REVIEW CARD: Wicked (2024) ===== -->
-        <article class="review-card">
-            <a href="reviews/wicked(2024).html" class="review-image-link">
-                <img class="review-poster" src="../images/daniel/wicked(2024).jpg" alt="Wicked (2024) poster">
-            </a>
-        
-            <div class="review-content">
-                <h2 class="review-title">
-                    <a href="reviews/wicked(2024).html">Wicked (2024)</a>
-                </h2>
-        
-                <p class="review-meta">By Daniel • December 2025</p>
-        
-                <p class="review-excerpt">
-                    Wicked surprised me more than I expected. It’s too damn long and leans hard on CGI and drama,
-                    but buried inside all of that is a genuinely entertaining story with strong performances,
-                    catchy music, and a duo that works better than it has any right to.
-                </p>
-        
-                <a href="reviews/wicked(2024).html" class="read-more">Read full review →</a>
-            </div>
-        </article>
+  
 
 
-        <!-- Review Card: Superman (2025) -->
-        <article class="review-card"
-                 data-reviewer="daniel"
-                 data-year="2025"
-                 data-rating="7.5"
-                 data-primary-genre="superhero"
-                 data-genres="action,epic,scifi,superhero">
-        
-              <a href="/daniel/reviews/superman(2025).html" class="review-image-link">
-                <img class="review-poster" src="../images/daniel/Superman(2025).jpg" alt="Superman (2025) poster">
-             </a>
-        
-            <div class="review-card-content">
-                <h3 class="review-card-title">Superman (2025)</h3>
-        
-                <p class="review-card-meta">
-                    <span class="review-card-rating">⭐ 7.5 / 10</span>
-                    <span class="review-card-runtime">2h 9m</span>
-                </p>
-        
-                <!-- ===== GENRE TAGS ===== -->
-                <div class="genre-tags">
-                    <span class="genre-tag">Action</span>
-                    <span class="genre-tag">Epic</span>
-                    <span class="genre-tag">Sci-Fi</span>
-                    <span class="genre-tag">Superhero</span>
-                </div>
-        
-                <p class="review-card-excerpt">
-                    A grounded, visually strong take on Superman that skips the origin
-                    and focuses on moral balance, leadership, and consequence.
-                </p>
-        
-                <a class="review-card-link"
-                   href="/daniel/reviews/superman(2025).html">
-                    Read Full Review →
-                </a>
-            </div>
-        </article>
+      <!-- ===== REVIEW CARD: Good Fortune (2025) ===== -->
+      <article class="review-card"
+               data-reviewer="daniel"
+               data-title="good fortune"
+               data-year="2025"
+               data-director="Aziz Ansari"
+               data-runtime="99"
+               data-rating="6.5"
+               data-genres="comedy,fantasy,romance">
 
+        <a href="reviews/goodfortune(2025).html" class="review-image-link">
+          <img class="review-poster"
+               src="../images/daniel/goodfortune(2025).jpg"
+               alt="Good Fortune (2025) poster">
+        </a>
 
-            <!-- ===== REVIEW CARD (SHIN GODZILLA) ===== -->
-        <article class="review-card">
-            <a href="reviews/shingodzilla.html" class="review-image-link">
-                <img class="review-poster" src="../images/daniel/ShinGodzilla.jpg" alt="Shin Godzilla poster">
-            </a>
-        
-            <div class="review-content">
-                <h2 class="review-title">
-                    <a href="reviews/shingodzilla.html">Shin Godzilla (2016)</a>
-                </h2>
-        
-                <p class="review-meta">By Daniel • December 2025</p>
-        
-                <p class="review-excerpt">
-                    A Godzilla movie that leans political and tactical instead of nonstop destruction. Strong themes and tension,
-                    even if the debates drag and the CGI reliance holds it back.
-                </p>
-        
-                <a href="reviews/shingodzilla.html" class="read-more">Read full review →</a>
-            </div>
-        </article>
+        <div class="review-content">
+          <h2 class="review-title">
+            <a href="reviews/goodfortune(2025).html">Good Fortune (2025)</a>
+          </h2>
 
+          <p class="review-meta">By Daniel • January 2026</p>
 
-                    <!-- ===== REVIEW CARD (28 YEARS LATER) ===== -->
-        <article class="review-card">
-            <a href="reviews/28yearslater(2025).html" class="review-image-link">
-                <img class="review-poster" src="../images/daniel/28YearsLater(2025).jpg" alt="28 Years Later (2025) poster">
-            </a>
-        
-            <div class="review-content">
-                <h2 class="review-title">
-                    <a href="reviews/28yearslater(2025).html">28 Years Later (2025)</a>
-                </h2>
-        
-                <p class="review-meta">By Daniel • December 2025</p>
-        
-                <p class="review-excerpt">
-                    A fast, bloody ride with some impressive camera ambition—held back by rushed pacing, harsh color, and sound choices that pull you out at the worst times.
-                </p>
-        
-                <a href="reviews/28yearslater(2025).html" class="read-more">Read full review →</a>
-            </div>
-        </article>
+          <div class="genre-tags"
+               data-primary-genre="comedy"
+               data-genres="comedy,fantasy,romance">
+            <span class="genre-tag" data-genre="comedy">Comedy</span>
+            <span class="genre-tag" data-genre="fantasy">Fantasy</span>
+            <span class="genre-tag" data-genre="romance">Romance</span>
+          </div>
 
+          <p class="review-excerpt">
+            Marketed as a comedy, but it plays more like a modern drama about stress, money, and feeling unseen.
+            The jokes didn’t land for me, but the message did — especially through Keanu Reeves’ Gabriel.
+          </p>
 
-        </section>
-    </main>
+          <a href="reviews/goodfortune(2025).html" class="read-more">Read full review →</a>
+        </div>
+      </article>
 
-    <footer class="legal-footer">
-        <p>© 2025 Nobody Critics. Reviews from nobodies, for everybody.</p>
-        <p>
-            <a href="../contact.html">Contact</a> ·
-            <a href="../privacypolicy.html">Privacy Policy</a> ·
-            <a href="../terms&conditions.html">Terms of Use</a> ·
-            <a href="../index.html">Home</a>
-        </p>
-    </footer>
+      <!-- ===== REVIEW CARD: Wicked (2024) ===== -->
+      <article class="review-card"
+               data-reviewer="daniel"
+               data-title="wicked"
+               data-year="2024"
+               data-director="Jon M. Chu"
+               data-runtime="137"
+               data-rating="6.5"
+               data-genres="fairy-tale,musical,fantasy,romance">
+
+        <a href="reviews/wicked(2024).html" class="review-image-link">
+          <img class="review-poster"
+               src="../images/daniel/wicked(2024).jpg"
+               alt="Wicked (2024) poster">
+        </a>
+
+        <div class="review-content">
+          <h2 class="review-title">
+            <a href="reviews/wicked(2024).html">Wicked (2024)</a>
+          </h2>
+
+          <p class="review-meta">By Daniel • December 2025</p>
+
+          <div class="genre-tags"
+               data-primary-genre="fantasy"
+               data-genres="fairy-tale,musical,fantasy,romance">
+            <span class="genre-tag" data-genre="fairy-tale">Fairy Tale</span>
+            <span class="genre-tag" data-genre="musical">Musical</span>
+            <span class="genre-tag" data-genre="fantasy">Fantasy</span>
+            <span class="genre-tag" data-genre="romance">Romance</span>
+          </div>
+
+          <p class="review-excerpt">
+            Wicked surprised me more than I expected. It’s too damn long and leans hard on CGI and drama,
+            but buried inside all of that is a genuinely entertaining story with strong performances,
+            catchy music, and a duo that works better than it has any right to.
+          </p>
+
+          <a href="reviews/wicked(2024).html" class="read-more">Read full review →</a>
+        </div>
+      </article>
+
+      <!-- ===== REVIEW CARD: Superman (2025) ===== -->
+      <article class="review-card"
+               data-reviewer="daniel"
+               data-title="superman"
+               data-year="2025"
+               data-director="James Gunn"
+               data-runtime="130"
+               data-rating="7.5"
+               data-genres="epic,adventure,superhero,scifi">
+
+        <a href="reviews/superman(2025).html" class="review-image-link">
+          <img class="review-poster"
+               src="../images/daniel/Superman(2025).jpg"
+               alt="Superman (2025) poster">
+        </a>
+
+        <div class="review-content">
+          <h2 class="review-title">
+            <a href="reviews/superman(2025).html">Superman (2025)</a>
+          </h2>
+
+          <p class="review-meta">By Daniel • December 2025</p>
+
+          <div class="genre-tags"
+               data-primary-genre="superhero"
+               data-genres="epic,adventure,superhero,scifi">
+            <span class="genre-tag" data-genre="epic">Epic</span>
+            <span class="genre-tag" data-genre="adventure">Adventure</span>
+            <span class="genre-tag" data-genre="superhero">Superhero</span>
+            <span class="genre-tag" data-genre="scifi">Sci-Fi</span>
+          </div>
+
+          <p class="review-excerpt">
+            A grounded, visually strong take on Superman that skips the origin and focuses on moral balance,
+            leadership, and consequence.
+          </p>
+
+          <a href="reviews/superman(2025).html" class="read-more">Read full review →</a>
+        </div>
+      </article>
+
+      <!-- ===== REVIEW CARD: Shin Godzilla (2016) ===== -->
+      <article class="review-card"
+               data-reviewer="daniel"
+               data-title="shin godzilla"
+               data-year="2016"
+               data-director="Hideaki Anno, Shinji Higuchi"
+               data-runtime="120"
+               data-rating="7"
+               data-genres="japanese,disaster,monster,horror,tragedy,action,drama">
+
+        <a href="reviews/shingodzilla.html" class="review-image-link">
+          <img class="review-poster"
+               src="../images/daniel/ShinGodzilla.jpg"
+               alt="Shin Godzilla poster">
+        </a>
+
+        <div class="review-content">
+          <h2 class="review-title">
+            <a href="reviews/shingodzilla.html">Shin Godzilla (2016)</a>
+          </h2>
+
+          <p class="review-meta">By Daniel • December 2025</p>
+
+          <div class="genre-tags"
+               data-primary-genre="monster"
+               data-genres="japanese,disaster,monster,horror,tragedy,action,drama">
+            <span class="genre-tag" data-genre="japanese">Japanese</span>
+            <span class="genre-tag" data-genre="disaster">Disaster</span>
+            <span class="genre-tag" data-genre="monster">Monster</span>
+            <span class="genre-tag" data-genre="horror">Horror</span>
+            <span class="genre-tag" data-genre="tragedy">Tragedy</span>
+            <span class="genre-tag" data-genre="action">Action</span>
+            <span class="genre-tag" data-genre="drama">Drama</span>
+          </div>
+
+          <p class="review-excerpt">
+            A Godzilla movie that leans political and tactical instead of nonstop destruction. Strong themes and tension,
+            even if the debates drag and the CGI reliance holds it back.
+          </p>
+
+          <a href="reviews/shingodzilla.html" class="read-more">Read full review →</a>
+        </div>
+      </article>
+
+      <!-- ===== REVIEW CARD: 28 Years Later (2025) ===== -->
+      <article class="review-card"
+               data-reviewer="daniel"
+               data-title="28 years later"
+               data-year="2025"
+               data-director="Danny Boyle"
+               data-runtime="115"
+               data-rating="4"
+               data-genres="body-horror,monster,horror,survival,scifi,thriller">
+
+        <a href="reviews/28yearslater(2025).html" class="review-image-link">
+          <img class="review-poster"
+               src="../images/daniel/28YearsLater(2025).jpg"
+               alt="28 Years Later (2025) poster">
+        </a>
+
+        <div class="review-content">
+          <h2 class="review-title">
+            <a href="reviews/28yearslater(2025).html">28 Years Later (2025)</a>
+          </h2>
+
+          <p class="review-meta">By Daniel • December 2025</p>
+
+          <div class="genre-tags"
+               data-primary-genre="horror"
+               data-genres="body-horror,monster,horror,survival,scifi,thriller">
+            <span class="genre-tag" data-genre="body-horror">Body Horror</span>
+            <span class="genre-tag" data-genre="monster">Monster</span>
+            <span class="genre-tag" data-genre="horror">Horror</span>
+            <span class="genre-tag" data-genre="survival">Survival</span>
+            <span class="genre-tag" data-genre="scifi">Sci-Fi</span>
+            <span class="genre-tag" data-genre="thriller">Thriller</span>
+          </div>
+
+          <p class="review-excerpt">
+            A fast, bloody ride with some impressive camera ambition—held back by rushed pacing, harsh color,
+            and sound choices that pull you out at the worst times.
+          </p>
+
+          <a href="reviews/28yearslater(2025).html" class="read-more">Read full review →</a>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="legal-footer">
+    <p>© 2025 Nobody Critics. Reviews from nobodies, for everybody.</p>
+    <p>
+      <a href="../contact.html">Contact</a> ·
+      <a href="../privacypolicy.html">Privacy Policy</a> ·
+      <a href="../terms&conditions.html">Terms of Use</a> ·
+      <a href="../index.html">Home</a>
+    </p>
+  </footer>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
